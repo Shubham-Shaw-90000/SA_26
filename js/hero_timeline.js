@@ -17,25 +17,25 @@ const timelineData = [
     year: "2024",
     title: "Inception Point",
     desc: "The project begins with a single line of code and a vision.",
-    img: "Assets/CC2021.jpg",
+    img: "assets/CC2021.jpg",
   },
   {
     year: "2025",
     title: "First Divergence",
     desc: "Systems split as complexity grows. The architecture expands.",
-    img: "Assets/CC2022.jpg",
+    img: "assets/CC2022.jpg",
   },
   {
     year: "2026",
     title: "Neural Integration",
     desc: "AI models merged with frontend logic creating organic motion.",
-    img: "Assets/CC2023.jpg",
+    img: "assets/CC2023.jpg",
   },
   {
     year: "2027",
     title: "Horizon Event",
     desc: "The final singularity. Design and code become indistinguishable.",
-    img: "Assets/CC2023.jpg",
+    img: "assets/CC2023.jpg",
   },
 ];
 
@@ -276,3 +276,4 @@ function initAnimation() {
 //     location.reload();
 //   }, 250);
 // });
+

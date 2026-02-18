@@ -1,0 +1,189 @@
+.body {
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* overflow: hidden; */
+}
+
+.perspective-container {
+    /* width: 100%;
+    height: 100%; */
+
+    width: 100vw;
+    height: 100vh;
+    
+    perspective: 12px;
+    /* transform: translateY(-20%); */
+    /* background-color: #ffffff; */
+    /* object-fit: scale-down; */
+}
+
+
+.layer {
+    position: absolute;
+}
+
+.layer img {
+    display: block;
+    width: 100vw;
+    /* width: 100%; */
+    height:100vh;
+    /* max-height: 100vh;
+    min-height: 100vh; */
+    object-fit: scale-down;
+}
+
+/* Different depths for each layer */
+.layer1 {
+    z-index: 10;
+}
+
+.layer2 {
+    z-index: 9;
+}
+
+.layer3 {
+    z-index: 8;
+}
+
+.layer4 {
+    z-index: 7;
+}
+
+.layer5 {
+    z-index: 6;
+}
+
+.layer5 {
+    z-index: 5;
+}
+
+
+
+#flash-img {
+    position: absolute;
+    display: none;
+    /* transform:scale(15); */
+    /* filter: sepia(1) hue-rotate(200deg) saturate(0); */
+    filter: brightness(0);
+    z-index: 2;
+}
+
+
+/* Styles for mobile devices */
+@media (max-width: 600px) {
+    .perspective-container {
+        width: 100%;
+        height: 100%;
+        perspective: 12px;
+        transform: translateY(0%);
+        /* background-color: #ffffff; */
+        /* object-fit: scale-down; */
+    }
+
+
+    .layer img {
+        display: block;
+        max-width: 100vw;
+        object-fit: contain;
+
+        min-width: 0;
+        max-height: none;
+        min-height: 0;
+    }
+}
+
+
+
+/* Phones (small screens) */
+@media (max-width: 767px) {
+    .perspective-container {
+        width: 100vw;
+        height: 100vh;
+        perspective: 12px;
+        /* transform: translateY(-20%); */
+    }
+
+    .layer1 img {
+        transform: scale(6);
+
+    }
+
+    .layer3 img {
+
+        transform: scale(11);
+    }
+
+    .layer5 img {
+
+        transform: scale(20);
+    }
+
+    .layer6 img {
+
+        transform: scale(32);
+    }
+}
+
+/* Tablets (medium screens) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .perspective-container {
+        width: 100vw;
+        height: 100vh;
+        perspective: 12px;
+        /* transform: translateY(-20%); */
+    }
+
+    .layer1 img {
+        transform: scale(6);
+
+    }
+
+    .layer3 img {
+
+        transform: scale(11);
+    }
+
+    .layer5 img {
+
+        transform: scale(20);
+    }
+
+    .layer6 img {
+
+        transform: scale(30);
+    }
+}
+
+/* Desktops (large screens) */
+@media (min-width: 1025px) {
+    .perspective-container {
+        width: 100vw;
+        height: 100vh;
+        perspective: 12px;
+        transform: translateY(-25%);
+    }
+
+    .layer1 img {
+        transform: scale(8.5);
+
+    }
+
+    .layer3 img {
+
+        transform: scale(16);
+    }
+
+    .layer5 img {
+
+        transform: scale(30);
+    }
+
+    .layer6 img {
+        transform: scale(45);
+    }
+}
